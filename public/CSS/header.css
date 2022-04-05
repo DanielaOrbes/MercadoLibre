@@ -1,0 +1,33 @@
+header{
+    background-color: var(--Amarillo);
+    padding: 20px 0;
+}
+header .superior{
+padding: 0 20px;
+}
+header .logo {
+    padding: 10px; 
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-top: 1%;
+    margin-left: 10px;
+    width: 50%;
+}
+header .busqueda{
+    margin-left: 20px;
+}
+header p {
+    text-align: center;
+}
+header .burger-menu {
+    display: block;
+    color: white;
+    background-color: var(--Celeste); 
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 0 auto;
+    width: 50px;
+    border-radius: 8px;
+    text-align: center;
+}
+    

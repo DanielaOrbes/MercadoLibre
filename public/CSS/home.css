@@ -1,0 +1,8 @@
+main section .banner{
+    margin: 0 auto;
+    width: 100%;
+}
+main section .detalleProducto {
+    margin: 0 auto;
+    width: 90%;
+}
