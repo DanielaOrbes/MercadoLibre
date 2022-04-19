@@ -52,3 +52,10 @@ main section .detalle h3{
     font-size:var(--Precios);
     color: var(--Gris-oscuro);
 }
+
+@media (min-width: 768px){
+    main section .detalle h3{
+        display: flex;
+    }
+
+}

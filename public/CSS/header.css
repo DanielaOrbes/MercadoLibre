@@ -30,4 +30,9 @@ header .burger-menu {
     border-radius: 8px;
     text-align: center;
 }
-    
+
+@media (min-width: 768px){
+    header .burger-menu {
+        display: none;
+    }
+    }
