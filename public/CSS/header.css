@@ -1,3 +1,4 @@
+/*375*/
 header{
     background-color: var(--Amarillo);
     padding: 20px 0;
@@ -5,20 +6,47 @@ header{
 header .superior{
 padding: 0 20px;
 }
-header .logo {
-    padding: 10px; 
-    background-repeat: no-repeat;
-    background-position: right top;
-    margin-top: 1%;
-    margin-left: 10px;
-    width: 50%;
+header .logo-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
+header .logo {
+    display: inline;
+    width: 216px;
+    margin-right: 12px;
+    }
 header .busqueda{
-    margin-left: 20px;
+    padding: 0px 10px;
+    display: inline;
+
+}
+header .busqueda input{
+    border: none;
+    font-size: 13px;
+    padding: 8px 0px;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: -35px;
+}
+header .busqueda button{
+    border-radius: 5px;
+    border: none;
+    margin-left: 106px;
+    position: relative;
+    padding: 8px 8px;
 }
 header p {
+    padding: 18px;
     text-align: center;
+    margin-top: -14px;
 }
+header .navegacionPrincipal{
+    justify-content: space-around;
+    display: none;
+}
+
 header .burger-menu {
     display: block;
     color: white;
@@ -35,4 +63,67 @@ header .burger-menu {
     header .burger-menu {
         display: none;
     }
+    header .box-principal{
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
     }
+    header .busqueda input{
+        width: 178px;
+        padding: 5px 5px;
+        margin: 0px;
+        border-end-end-radius: 0%;
+        border-top-right-radius: 0%;
+        box-shadow: 2px 2px 3px -1px;
+        font-size: 15px;
+    }
+    header .busqueda button{
+        margin-left: 185px;
+        padding: 5px 5px;
+        box-shadow: 2px 2px 3px -2px;
+    }
+    header .logo {
+        margin: 10px auto;
+        width: 100%;
+    }
+    header p {
+        width: 310px;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    header .navegacionPrincipal{
+        display: flex;
+        justify-content: space-around;
+    }
+    header .navegacionPrincipal li {
+        margin: 0px 8px;
+    }
+    header .infoTienda{
+        display: flex;
+        
+    }
+    header .ingresoLogin{
+        display: flex;
+        
+
+    }
+}
+@media (min-width: 1024px){
+    header .box-principal {
+      justify-content: space-between;
+      padding: 0px 25px;
+    }
+    header p {
+      width: 370px;
+      font-size: 17px;
+    }
+    header .busqueda input{
+      width: 220px;
+      padding: 5px 10px;
+      font-size: 17px;
+    }
+    header .busqueda button{
+      margin-left: 224px;
+      padding: 8px 6px;
+    }
+}

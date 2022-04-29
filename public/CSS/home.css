@@ -1,54 +1,83 @@
+*{ 
+    margin: 0px; 
+    padding: 0px;   
+    box-sizing: border-box; 
+}
+
 main {
     background-color: var(--Gris-claro);
 }
+
+
 main section .banner{
-    display: none;
-    margin: 0 auto;
     width: 100%;
 }
 main h2{
+    text-align: center;
     color: var(--Gris-oscuro);
     font-size: var(--Titulares);
 }
 main section{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 1px 0;
 }
-main section article{
+main section .articulo{
     background-color: white;
-    margin: 10px 0;
-    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+    margin: 10px 0; 
 }
+
 main section article .detalle{
     padding: 0 15px;
     border: solid 1px var(--Gris-claro);
+    position: relative;
 }
-main section article .detalle .camion{
+
+main section article i{ 
+    display: block;
+    font-size: 16px; 
+    padding: 5px; 
+    width: 30px; 
+    height: 30px; 
+    border: 1px solid #39b54a; 
+    background-color: #FFF; 
+    border-radius: 50%; 
+    position: absolute; 
+    right: 20px; 
+    top: -15px; 
+} 
+ main section article .detalle .camion{
     color: var(--Verde);
     padding:20px; 
-    border: 1px solid var(--Verde);
+   /*  border: 1px solid var(--Verde); */
     width: 10px;
     height: 10px;
     border-radius: 50%;
     font-size: 20px;
     text-align: center;
-}
+} 
 main section .detalleProducto{
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
+
 main section .detalle p{
+    display: inline;
+    width: 30%;
     font-size: var(--Precios);
 }
 
 main section .detalle span{
+    display: inline;
+    width: 70%;
     font-size: var(--DescuentosYDescripciones);
     color: var(--Verde);
+    margin: 60px;
+    margin-top: 10px;
 }
 
 main section .detalle h3{
-    display: none;
+    margin-top: 10px;
     font-size:var(--Precios);
     color: var(--Gris-oscuro);
 }
@@ -57,5 +86,40 @@ main section .detalle h3{
     main section .detalle h3{
         display: flex;
     }
-
+    main .productos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    main .articulo{
+            width: 40%;
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main h2 {
+            text-align: left;
+            margin: 25px 60px;
+            color: var(--Gris-oscuro);
+            font-size: var(--Titulares);
+    }
+}
+@media (min-width: 1024px){
+    main .productos {
+        flex-wrap: nowrap;
+    }
+        
+    main .articulo{
+           width: 24%;
+           box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main h2 {
+            margin: 0px 15px;
+    }
+    main section .articulo {
+                margin: 30px 15px;
+    }
+    main section .detalle span {
+                margin: 30px;
+    }
 }
